@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kioo Mtaani — Sura Zetu Mtaa Wetu</title>
+<meta name="description" content="Kioo Mtaani by Manyarunigga: the magazine, the novel Vumbi na Moto, merch and digital art.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0d0d;--card:#181818;--text:#f5f1e8;--muted:#a9a49a;--red:#bb0000;--green:#006600;--line:#2a2a2a}
+@media (prefers-color-scheme: light){:root{--bg:#f7f3ea;--card:#fff;--text:#111;--muted:#5d5a52;--line:#ddd6c6}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,sans-serif}
+img{max-width:100%;display:block}a{color:inherit}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+.logo{background:var(--red);color:#fff;font:700 18px Lora,serif;letter-spacing:.12em;padding:4px 10px;text-decoration:none}
+nav{display:flex;gap:16px;font-size:14px;overflow-x:auto}nav a{text-decoration:none;color:var(--muted);white-space:nowrap}nav a:hover{color:var(--text)}
+.flag{height:5px;background:linear-gradient(90deg,#000 33%,var(--red) 33% 66%,var(--green) 66%)}
+section{max-width:960px;margin:0 auto;padding:56px 20px}
+.hero{text-align:center;padding-top:72px}
+.kicker{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);font-weight:700}
+h1,h2,h3{font-family:Lora,serif;line-height:1.15;margin:.3em 0}
+h1{font-size:clamp(40px,10vw,76px)}h2{font-size:clamp(28px,6vw,40px)}
+.hero p{color:var(--muted);max-width:520px;margin:12px auto 24px}
+.btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border:2px solid var(--red)}
+.btn.alt{background:transparent;color:var(--text);border-color:var(--text)}.btn:hover{opacity:.85}
+.split{display:grid;gap:28px;align-items:center}
+@media(min-width:720px){.split{grid-template-columns:300px 1fr}}
+.cover{background:#000;border:6px solid var(--red);aspect-ratio:2/3;max-width:300px;width:100%;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:24px;color:#fff;margin:auto}
+.cover b{font:700 34px Lora,serif;letter-spacing:.06em}.cover i{font-style:normal;color:#c9c4b8;margin-top:4px}
+.cover small{letter-spacing:.35em;margin-top:22px;color:#e33}
+.mag{max-width:300px;width:100%;margin:auto;border:6px solid var(--red)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));margin-top:20px}
+.item{background:var(--card);border:1px solid var(--line);padding:14px}
+.item .ph{aspect-ratio:1;background:var(--line);display:grid;place-items:center;color:var(--muted);font-size:13px;margin-bottom:10px;text-align:center;padding:8px}
+.item img{aspect-ratio:1;object-fit:cover;margin-bottom:10px}
+.price{color:var(--red);font-weight:700}
+.note{color:var(--muted);font-size:14px}
+.box{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--green);padding:18px 20px;margin-top:20px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:32px 20px 40px}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">KIOO</a>
+  <nav aria-label="Sections"><a href="#magazine">Magazine</a><a href="#book">Book</a><a href="#shirts">Merch</a><a href="#prints">Art</a><a href="#order">Order</a><a href="#contact">Contact</a></nav>
+</header>
+<div class="flag"></div>
+
+<main id="top">
+<section class="hero">
+  <div class="kicker">Kioo Mtaani</div>
+  <h1>Sura zetu.<br>Mtaa wetu.</h1>
+  <p>The magazine, the novel, the merch and the art. By Manyarunigga.</p>
+  <a class="btn" href="#magazine">Read the magazine</a> <a class="btn alt" href="#shirts">Shop merch</a>
+</section>
+
+<section id="magazine">
+  <div class="split">
+    <img class="mag" src="cover-magazine.jpg" alt="Kioo Mtaani Issue 01, The Culture Issue">
+    <div>
+      <div class="kicker">Issue 01</div>
+      <h2>The Culture Issue</h2>
+      <p>Bien on the world stage, AFCON 2027, Sheng, matatu art and the culture that makes the mtaa.</p>
+      <!-- When the magazine PDF is in your repo, change href to it, e.g. kioo-mtaani-issue-01.pdf -->
+      <a class="btn" id="magLink" href="#contact">Read Issue 01</a>
+      <p class="note">Magazine link coming soon.</p>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="split">
+    <div class="cover"><small>A NOVEL</small><b>VUMBI NA MOTO</b><i>(Dust and Fire)</i></div>
+    <div>
+      <div class="kicker">The novel</div>
+      <h2>Vumbi na Moto <span class="note">(Dust and Fire)</span></h2>
+      <p>Set in the Great Rift Valley of a future Kenya, beneath two moons. Ten chapters, 100 pages, with a glossary of Swahili words at the back.</p>
+      <a class="btn" href="vumbi-na-moto.pdf">Read the ebook (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section id="shirts">
+  <div class="kicker">Merch</div>
+  <h2>Wear the mtaa</h2>
+  <div class="grid" id="merchGrid"></div>
+</section>
+
+<section id="prints">
+  <div class="kicker">Digital art</div>
+  <h2>Own the art</h2>
+  <div class="grid" id="artGrid"></div>
+</section>
+
+<section id="order">
+  <h2>How to order</h2>
+  <div class="box">
+    <p id="payText">Payment details coming soon.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get in touch</h2>
+  <div class="box" id="contactBox"><p>Contact details coming soon.</p></div>
+</section>
+</main>
+
+<footer>© Kioo Mtaani · Manyarunigga · Sura Zetu Mtaa Wetu</footer>
+
+<script>
+/* ============ EDIT THIS BLOCK ============ */
+const SITE = {
+  mpesa: "",            // e.g. "Till number 123456" or "Paybill 123456, account: your name"
+  whatsapp: "",         // digits only with country code, e.g. "2547XXXXXXXX"
+  email: "",            // e.g. "hello@example.com"
+  instagram: ""         // handle without @, e.g. "kioomtaani"
+};
+// Add items like: {name:"Kioo tee", price:1500, image:"tee.jpg"}
+const MERCH = [];
+const ART   = [];
+/* ========================================= */
+
+function card(p){
+  const msg = encodeURIComponent("Hi, I'd like to order: " + p.name);
+  const buy = SITE.whatsapp ? `<a class="btn" style="padding:8px 14px;font-size:14px" href="https://wa.me/${SITE.whatsapp}?text=${msg}">Order</a>` : "";
+  const img = p.image ? `<img src="${p.image}" alt="${p.name}">` : `<div class="ph">Photo coming soon</div>`;
+  return `<div class="item">${img}<h3 style="font-size:18px">${p.name}</h3><p class="price">KES ${Number(p.price).toLocaleString()}</p>${buy}</div>`;
+}
+function fill(id, list){
+  const el = document.getElementById(id);
+  el.innerHTML = list.length ? list.map(card).join("") : `<div class="item"><div class="ph">Drop coming soon</div><h3 style="font-size:18px">New items on the way</h3><p class="note">Follow along for the release.</p></div>`;
+}
+fill("merchGrid", MERCH); fill("artGrid", ART);
+
+if (SITE.mpesa) document.getElementById("payText").textContent = "Pay by M-Pesa: " + SITE.mpesa + ". Then send your payment message and what you ordered on WhatsApp, and we'll confirm.";
+
+const links = [];
+if (SITE.whatsapp) links.push(`<a href="https://wa.me/${SITE.whatsapp}">WhatsApp</a>`);
+if (SITE.email) links.push(`<a href="mailto:${SITE.email}">${SITE.email}</a>`);
+if (SITE.instagram) links.push(`<a href="https://instagram.com/${SITE.instagram}">@${SITE.instagram} on Instagram</a>`);
+if (links.length) document.getElementById("contactBox").innerHTML = "<p>" + links.join(" · ") + "</p>";
+</script>
+</body>
+</html>
