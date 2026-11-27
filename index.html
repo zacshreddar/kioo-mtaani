@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kioo Mtaani — Sura Zetu Mtaa Wetu</title>
+<meta name="description" content="Kioo Mtaani by Manyarunigga: the magazine, the novel Vumbi na Moto, merch and digital art.">
+<meta property="og:title" content="Kioo Mtaani">
+<meta property="og:description" content="Sura Zetu Mtaa Wetu. Magazine, novel, merch and art.">
+<meta property="og:image" content="cover-magazine.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0b;--card:#161616;--text:#f5f1e8;--muted:#a39e92;--red:#d10a0a;--green:#0a8a2a;--line:#2b2b2b}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;z-index:50;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{max-width:100%;display:block}a{color:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(11,11,11,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px;padding:10px 18px}
+.logo{background:var(--red);color:#fff;font:700 18px Lora,serif;letter-spacing:.14em;padding:4px 10px;text-decoration:none}
+nav{display:flex;gap:16px;font-size:13px;font-weight:500;overflow-x:auto;scrollbar-width:none}nav a{text-decoration:none;color:var(--muted);white-space:nowrap}nav a:hover{color:#fff}
+.flag{height:6px;background:linear-gradient(90deg,#000 33%,var(--red) 33% 66%,var(--green) 66%)}
+section{max-width:1000px;margin:0 auto;padding:72px 20px}
+h1,h2,h3{font-family:Lora,serif;line-height:1.05;margin:.2em 0}
+h2{font-size:clamp(32px,7vw,52px)}
+.kicker{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--red);font-weight:800}
+.kicker span{color:var(--muted);margin-right:10px}
+.btn{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:15px;text-decoration:none;padding:14px 26px;border:2px solid var(--red);cursor:pointer;font-family:inherit;transition:transform .15s}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:4px 4px 0 #fff}
+.btn.alt{background:transparent;border-color:var(--text);color:var(--text)}
+.hero{display:grid;gap:36px;align-items:center;padding-top:56px}
+@media(min-width:800px){.hero{grid-template-columns:1.2fr .8fr}}
+.hero h1{font-size:clamp(46px,12vw,96px);letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--red)}
+.hero h1 .o{-webkit-text-stroke:2px var(--text);color:transparent}
+.hero p{color:var(--muted);max-width:480px;margin:16px 0 26px;font-size:18px}
+.stack{position:relative;max-width:340px;margin:auto;transform:rotate(3deg);transition:transform .3s}
+.stack:hover{transform:rotate(0)}
+.stack:before{content:"";position:absolute;inset:14px -14px -14px 14px;background:var(--green)}
+.stack img{position:relative;border:5px solid #fff}
+.ticker{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;font-weight:800;letter-spacing:.3em;font-size:13px;padding:10px 0}
+.ticker div{display:inline-block;animation:run 28s linear infinite}
+@keyframes run{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker div{animation:none}}
+.split{display:grid;gap:36px;align-items:center}
+@media(min-width:760px){.split{grid-template-columns:320px 1fr}.split.flip{grid-template-columns:1fr 320px}.split.flip>:first-child{order:2}}
+.cover{aspect-ratio:2/3;max-width:320px;width:100%;margin:auto;position:relative;overflow:hidden;text-align:center;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:30px 20px;border:5px solid #fff;box-shadow:10px 10px 0 var(--red);background:linear-gradient(180deg,#120808 0%,#3a0d05 55%,#a3330a 100%)}
+.cover .m1,.cover .m2{position:absolute;border-radius:50%}
+.cover .m1{width:90px;height:90px;top:36px;left:42px;background:radial-gradient(circle at 35% 35%,#fff7e0,#d9c9a0 60%,#9d8a5c)}
+.cover .m2{width:46px;height:46px;top:70px;right:48px;background:radial-gradient(circle at 35% 35%,#ffd9c4,#e08a5c 70%)}
+.cover small{letter-spacing:.4em;font-size:11px;color:#ffb199}
+.cover b{font:700 36px/1 Lora,serif;margin:8px 0 6px}.cover i{font-style:normal;color:#e6d8c3;font-size:14px}
+.cover:after{content:"";position:absolute;left:0;right:0;bottom:0;height:26%;background:linear-gradient(0deg,#000,transparent);z-index:0}
+.cover>*{position:relative;z-index:1}.cover .m1,.cover .m2{position:absolute}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 24px}
+.chips span{border:1px solid var(--line);padding:4px 12px;font-size:13px;color:var(--muted);border-radius:99px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));margin-top:26px}
+.item{background:var(--card);border:1px solid var(--line);padding:14px;transition:transform .2s,border-color .2s}
+.item:hover{transform:translateY(-5px);border-color:var(--red)}
+.item .ph{aspect-ratio:1;background:repeating-linear-gradient(45deg,#1c1c1c,#1c1c1c 10px,#222 10px,#222 20px);display:grid;place-items:center;color:var(--muted);font-size:13px;margin-bottom:12px;text-align:center}
+.item img{aspect-ratio:4/5;object-fit:contain;background:#000;margin-bottom:12px;width:100%}
+.price{color:#ff4d4d;font-weight:800;margin:2px 0 10px}
+.note{color:var(--muted);font-size:14px}
+.box{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--green);padding:20px 22px;margin-top:22px;font-size:17px}
+.box a{color:#fff;font-weight:700}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:36px 20px 48px;border-top:1px solid var(--line)}
+/* reader */
+#reader{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.96);display:none;flex-direction:column;align-items:center;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+#reader.on{display:flex}
+#reader .bar{width:100%;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;font-size:14px;color:#ccc}
+#reader button{background:none;border:1px solid #555;color:#fff;font:inherit;padding:8px 14px;cursor:pointer}
+#reader .stage{flex:1;min-height:0;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:0 8px}
+#reader img{max-height:100%;max-width:100%;object-fit:contain;touch-action:pan-y}
+#reader .arrow{font-size:26px;padding:12px 14px}
+#reader .foot{padding:10px;font-size:13px;color:#999}#reader .foot a{color:#fff}
+@media(max-width:600px){#reader .arrow{position:absolute;bottom:56px;background:rgba(0,0,0,.6)}#prev{left:12px}#next{right:12px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">KIOO</a>
+  <nav aria-label="Sections"><a href="#magazine">Magazine</a><a href="#book">Book</a><a href="#shirts">Merch</a><a href="#prints">Art</a><a href="#order">Order</a><a href="#contact">Contact</a></nav>
+</header>
+<div class="flag"></div>
+
+<main id="top">
+<section class="hero">
+  <div>
+    <div class="kicker">Kioo Mtaani · Issue 01</div>
+    <h1>Sura <em>zetu.</em><br><span class="o">Mtaa</span> wetu.</h1>
+    <p>Culture, stories and art from the streets of Nairobi. A magazine, a novel, merch and digital art by Manyarunigga.</p>
+    <button class="btn" data-open>Read the magazine</button> <a class="btn alt" href="#shirts">Shop merch</a>
+  </div>
+  <div class="stack"><img src="cover-magazine.jpg" alt="Kioo Mtaani Issue 01, The Culture Issue"></div>
+</section>
+<div class="ticker"><div>SURA ZETU • MTAA WETU • KIOO MTAANI • THE CULTURE ISSUE • SURA ZETU • MTAA WETU • KIOO MTAANI • THE CULTURE ISSUE • SURA ZETU • MTAA WETU • KIOO MTAANI • THE CULTURE ISSUE • SURA ZETU • MTAA WETU • KIOO MTAANI • THE CULTURE ISSUE • </div></div>
+
+<section id="magazine">
+  <div class="split">
+    <img src="cover-magazine.jpg" alt="Kioo Mtaani cover" style="max-width:320px;border:5px solid #fff;box-shadow:10px 10px 0 var(--green);margin:auto" loading="lazy">
+    <div>
+      <div class="kicker"><span>01</span>The magazine</div>
+      <h2>The Culture Issue</h2>
+      <p>Bien on the world stage, AFCON 2027, Sheng, matatu art and the culture that makes the mtaa.</p>
+      <div class="chips"><span>Music</span><span>Football</span><span>Baba Raila tribute</span><span>Nightlife</span><span>Sheng</span></div>
+      <button class="btn" data-open>Read online</button> <a class="btn alt" href="kioo-mtaani-issue-01.pdf" download>Download PDF</a>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="split flip">
+    <div>
+      <div class="kicker"><span>02</span>The novel</div>
+      <h2>Vumbi na Moto <span class="note" style="font-size:.5em">(Dust and Fire)</span></h2>
+      <p>Set in the Great Rift Valley of a future Kenya, beneath two moons. Ten chapters, 100 pages, and a glossary of Swahili words at the back.</p>
+      <div class="chips"><span>Sci-fi</span><span>Swahili words</span><span>Rift Valley</span></div>
+      <a class="btn" href="vumbi-na-moto.pdf">Read the ebook</a>
+    </div>
+    <div class="cover"><span class="m1"></span><span class="m2"></span><small>A NOVEL</small><b>VUMBI<br>NA MOTO</b><i>(Dust and Fire)</i></div>
+  </div>
+</section>
+
+<section id="shirts">
+  <div class="kicker"><span>03</span>Merch</div>
+  <h2>Wear the mtaa</h2>
+  <p class="note">KES 750 per tee. <strong style="color:var(--text)">Any 3 for KES 1,800</strong> (save KES 450).</p>
+  <div class="grid" id="merchGrid"></div>
+</section>
+
+<section id="prints">
+  <div class="kicker"><span>04</span>Digital art</div>
+  <h2>Own the art</h2>
+  <p class="note">KES 100 each. You get the full-resolution file after payment.</p>
+  <div class="grid" id="artGrid"></div>
+</section>
+
+<section id="order">
+  <div class="kicker"><span>05</span>Order</div>
+  <h2>How to order</h2>
+  <div class="box"><p id="payText" style="margin:0">Payment details coming soon.</p></div>
+</section>
+
+<section id="contact">
+  <div class="kicker"><span>06</span>Contact</div>
+  <h2>Get in touch</h2>
+  <div class="box" id="contactBox"><p style="margin:0">Contact details coming soon.</p></div>
+</section>
+</main>
+
+<footer>© Kioo Mtaani · Manyarunigga · Sura Zetu Mtaa Wetu</footer>
+
+<div id="reader" role="dialog" aria-modal="true" aria-label="Magazine reader">
+  <div class="bar"><span id="pg">Page 1 / 19</span><span>Kioo Mtaani · Issue 01</span><button id="close">Close ✕</button></div>
+  <div class="stage"><button class="arrow" id="prev" aria-label="Previous page">‹</button><img id="pageImg" alt="Magazine page"><button class="arrow" id="next" aria-label="Next page">›</button></div>
+  <div class="foot">Swipe or use ← → keys · <a href="kioo-mtaani-issue-01.pdf" download>Download PDF</a></div>
+</div>
+
+<script>
+/* ============ EDIT THIS BLOCK ============ */
+const SITE = {
+  mpesa: "",            // e.g. "Till number 123456" or "Paybill 123456, account: your name"
+  whatsapp: "",         // digits only with country code, e.g. "2547XXXXXXXX"
+  email: "",            // e.g. "hello@example.com"
+  instagram: ""         // handle without @, e.g. "kioomtaani"
+};
+// Add items like: {name:"Kioo tee", price:1500, image:"tee.jpg"}
+const MERCH = [
+  {name:"Kioo Mtaani Logo Tee", price:750, image:"merch/kioo-logo-tee.jpg"},
+  {name:"Crown of Gold Tee", price:750, image:"merch/crown-of-gold-tee.jpg"},
+  {name:"Purple Night Tee", price:750, image:"merch/purple-night-tee.jpg"},
+  {name:"Green Star Tears Tee", price:750, image:"merch/green-star-tears-tee.jpg"},
+  {name:"Red Dress Tee", price:750, image:"merch/red-dress-tee.jpg"},
+  {name:"Final Heaven Tee", price:750, image:"merch/final-heaven-tee.jpg"},
+  {name:"Cynical Tee", price:750, image:"merch/cynical-tee.jpg"},
+  {name:"36.5 Tee", price:750, image:"merch/thirty-six-five-tee.jpg"},
+  {name:"Chrome Doberman Tee", price:750, image:"merch/chrome-doberman-tee.jpg"}
+];
+const ART   = [
+  {name:"Crown of Gold", price:100, image:"art/crown-of-gold.jpg"},
+  {name:"October Victory", price:100, image:"art/october-victory.jpg"},
+  {name:"World Cup Stamp", price:100, image:"art/world-cup-stamp.jpg"},
+  {name:"Trophy Squad", price:100, image:"art/trophy-squad.jpg"},
+  {name:"Purple Night", price:100, image:"art/purple-night.jpg"},
+  {name:"Green Star Tears", price:100, image:"art/green-star-tears.jpg"},
+  {name:"Red Dress", price:100, image:"art/red-dress.jpg"},
+  {name:"Final Heaven", price:100, image:"art/final-heaven.jpg"},
+  {name:"Cynical", price:100, image:"art/cynical.jpg"},
+  {name:"36.5°", price:100, image:"art/thirty-six-five.jpg"},
+  {name:"Chrome Doberman", price:100, image:"art/chrome-doberman.jpg"}
+];
+/* ========================================= */
+
+function card(p){
+  const msg = encodeURIComponent("Hi, I'd like to order: " + p.name);
+  const buy = SITE.whatsapp ? `<a class="btn" style="padding:8px 14px;font-size:14px" href="https://wa.me/${SITE.whatsapp}?text=${msg}">Order</a>` : "";
+  const img = p.image ? `<img src="${p.image}" alt="${p.name}">` : `<div class="ph">Photo coming soon</div>`;
+  return `<div class="item">${img}<h3 style="font-size:18px">${p.name}</h3><p class="price">KES ${Number(p.price).toLocaleString()}</p>${buy}</div>`;
+}
+function fill(id, list){
+  const el = document.getElementById(id);
+  el.innerHTML = list.length ? list.map(card).join("") : `<div class="item"><div class="ph">Drop coming soon</div><h3 style="font-size:18px">New items on the way</h3><p class="note">Follow along for the release.</p></div>`;
+}
+fill("merchGrid", MERCH); fill("artGrid", ART);
+
+if (SITE.mpesa) document.getElementById("payText").textContent = "Pay by M-Pesa: " + SITE.mpesa + ". Then send your payment message and what you ordered on WhatsApp, and we'll confirm.";
+
+const links = [];
+if (SITE.whatsapp) links.push(`<a href="https://wa.me/${SITE.whatsapp}">WhatsApp</a>`);
+if (SITE.email) links.push(`<a href="mailto:${SITE.email}">${SITE.email}</a>`);
+if (SITE.instagram) links.push(`<a href="https://instagram.com/${SITE.instagram}">@${SITE.instagram} on Instagram</a>`);
+if (links.length) document.getElementById("contactBox").innerHTML = "<p>" + links.join(" · ") + "</p>";
+
+/* ---- magazine reader ---- */
+const TOTAL = 19; let cur = 1;
+const R = document.getElementById("reader"), IMG = document.getElementById("pageImg");
+function show(n){ cur = Math.max(1, Math.min(TOTAL, n)); IMG.src = "pages/p-" + String(cur).padStart(2,"0") + ".jpg"; document.getElementById("pg").textContent = "Page " + cur + " / " + TOTAL;
+  const nx = new Image(); if (cur < TOTAL) nx.src = "pages/p-" + String(cur+1).padStart(2,"0") + ".jpg"; }
+function openR(){ R.classList.add("on"); document.body.style.overflow="hidden"; show(cur); }
+function closeR(){ R.classList.remove("on"); document.body.style.overflow=""; }
+document.querySelectorAll("[data-open]").forEach(b => b.addEventListener("click", openR));
+document.getElementById("close").onclick = closeR;
+document.getElementById("prev").onclick = () => show(cur-1);
+document.getElementById("next").onclick = () => show(cur+1);
+document.addEventListener("keydown", e => { if (!R.classList.contains("on")) return; if (e.key==="ArrowRight") show(cur+1); if (e.key==="ArrowLeft") show(cur-1); if (e.key==="Escape") closeR(); });
+let sx=null; R.addEventListener("touchstart", e => sx = e.touches[0].clientX, {passive:true});
+R.addEventListener("touchend", e => { if (sx===null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); sx=null; });
+</script>
+</body>
+</html>
